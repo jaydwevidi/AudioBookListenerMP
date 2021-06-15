@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "635637583263",
+    "project_id": "audiobooklistnermp",
+    "storage_bucket": "audiobooklistnermp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635637583263:android:0ddbb3e6cba8344420c1aa",
+        "android_client_info": {
+          "package_name": "com.example.audiobooklistnermp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635637583263-e0avd9q27k5sseerdqte9s74b1r2pod7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwGKt-frQVgnxdcxVxzrdtDpc-fLV0P7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635637583263-e0avd9q27k5sseerdqte9s74b1r2pod7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

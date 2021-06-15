@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".RegisterActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar_Register"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchAgree" />
+
+    <EditText
+        android:id="@+id/ET_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ET_eMail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="e-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/ET_Name"
+        app:layout_constraintStart_toStartOf="@+id/ET_Name"
+        app:layout_constraintTop_toBottomOf="@+id/ET_Name" />
+
+    <Switch
+        android:id="@+id/switchAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Agree "
+        app:layout_constraintStart_toEndOf="@+id/TV_TandC"
+        app:layout_constraintTop_toBottomOf="@+id/ET_eMail"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/TV_TandC"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/TermsAndConditions"
+        app:layout_constraintBottom_toBottomOf="@+id/switchAgree"
+        app:layout_constraintStart_toStartOf="@+id/ET_eMail"
+        app:layout_constraintTop_toTopOf="@+id/switchAgree" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchAgree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
